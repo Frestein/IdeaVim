@@ -37,7 +37,7 @@ set ideamarks
 set idearefactormode=normal
 
 """ Aliases --------------------------------
-nmap <C-a> ggVG"+y
+nmap <C-c> ggVG"+y
 
 """ Mappings -------------------------------
 """ Open IdeaVim settings ------------------
@@ -123,8 +123,8 @@ nmap <leader>qd <Action>(QuickDefinition)
 nmap <leader>qD <Action>(QuickTypeDefinition)
 
 """ Code -----------------------------------
-map <leader>c <Action>(CommentByLineComment)
-map <leader>C <Action>(CommentByBlockComment)
+nmap <leader>/ <Action>(CommentByLineComment)
+vmap <leader>/ <Action>(CommentByBlockComment)
 nmap <leader>qf <Action>(ShowIntentionActions)
 nmap <leader>se <Action>(ShowErrorDescription)
 nmap <leader>om <Action>(OverrideMethods)
@@ -168,7 +168,7 @@ nmap za <Action>(CollapseAllRegions)
 nmap zA <Action>(ExpandAllRegions)
 
 """ Zen ------------------------------------
-nmap <leader>z <Action>(ToggleZenMode)
+nmap <leader>mz <Action>(ToggleZenMode)
 
 """ [] -------------------------------------
 nmap [g <Action>(GotoPreviousError)
